@@ -29,6 +29,19 @@ function BackgroundGradient() {
           urlString={isMobile ? mobileQuery : query}
         />
       </ShaderGradientCanvas>
+      <div className="absolute top-[50%] left-0 z-10 h-40 w-60 -translate-y-1/2">
+        <ShaderGradientCanvas
+          lazyLoad={false}
+          key={"hero-gradient1"}
+          style={{
+            width: "101%",
+            height: "101%",
+            position: "absolute",
+            inset: 0,
+            pointerEvents: "none",
+          }}
+        ></ShaderGradientCanvas>
+      </div>
     </div>
   );
 }

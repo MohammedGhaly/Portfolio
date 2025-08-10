@@ -1,16 +1,11 @@
 import AboutTitles from "../_components/AboutTitles";
 import HidingSquares from "../_components/HidingSquares";
+import SectionTitle from "../_components/SectionTitle";
 
 function AboutSection() {
   return (
-    <section className="mt-10 w-full px-6 lg:mt-20">
-      {/* section title */}
-      <h1 className="mb-14 w-full bg-gradient-to-b from-white/90 to-white/0 bg-clip-text text-center text-5xl tracking-[1.5rem] text-transparent uppercase md:text-8xl md:tracking-[3.2rem] lg:top-10 lg:mb-22 lg:text-9xl lg:tracking-[6.4rem]">
-        {"About m"}
-        <p className="inline-block bg-gradient-to-b from-white/5 to-white/0 bg-clip-text text-5xl tracking-normal text-transparent md:text-8xl lg:text-9xl">
-          e
-        </p>
-      </h1>
+    <section className="mt-10 flex w-full flex-col gap-0 px-6 md:gap-14 lg:mt-20">
+      <SectionTitle title="About Me" cn={"mb-14 lg:mb-16"} />
 
       {/* section content */}
       <div className="flex flex-col gap-16 md:flex-row-reverse md:items-center md:gap-0">

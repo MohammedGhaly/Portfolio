@@ -6,12 +6,16 @@ function ContactLinks() {
     <div className="flex flex-col gap-5">
       <ContactItem
         title="Email"
-        details="ghaly163@proton.com"
-        href="mailto:ghaly163@proton.com"
+        details="ghaly163@proton.me"
+        href="mailto:ghaly163@proton.me"
       >
         <MailIcon className="h-9 w-9 text-gray-100" />
       </ContactItem>
-      <ContactItem title="Phone" details="+20 1100286256" href="tel:+201100286256">
+      <ContactItem
+        title="Phone"
+        details="+20 1100286256"
+        href="tel:+201100286256"
+      >
         <Phone className="h-9 w-9 text-gray-100" />
       </ContactItem>
       <ContactItem
