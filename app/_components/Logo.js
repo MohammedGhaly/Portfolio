@@ -1,0 +1,56 @@
+"use client";
+
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
+function Logo() {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(scrollY / height);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const strokeDashoffset = 1 - progress;
+
+  return (
+    <div className="fixed top-2 left-2 z-20 flex min-h-16 min-w-16 cursor-pointer items-center justify-center rounded-full shadow-lg">
+      <svg
+        className={`h-16 w-16 ${strokeDashoffset === 1 ? "hidden" : ""}`}
+        viewBox="0 0 100 100"
+        key={"svg1"}
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="45"
+          fill="none"
+          stroke="#45495c"
+          strokeWidth="5"
+          strokeDasharray="1"
+          strokeDashoffset={strokeDashoffset}
+          pathLength="1"
+          strokeLinecap="round"
+        />
+      </svg>
+      <div
+        key={"svg2"}
+        className="absolute pt-[4px]"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        <Image height={48} width={48} src="/logo.svg" alt="Logo" />
+      </div>
+    </div>
+  );
+}
+
+export default Logo;

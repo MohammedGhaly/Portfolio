@@ -1,0 +1,11 @@
+/* Hide scrollbars for the entire page */
+* {
+  scrollbar-width: 0px;
+}
+
+.projectsStack {
+  color: #1b252e;
+  @media screen and (min-width: 768px) {
+    transform: perspective(1000px) rotate3d(-7, -2, 5, -20deg);
+  }
+}
