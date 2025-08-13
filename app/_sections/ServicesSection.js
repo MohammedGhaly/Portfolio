@@ -1,16 +1,16 @@
-import { Codesandbox } from "lucide-react";
-import SectionTitle from "../_components/SectionTitle";
-import ServiceItem from "../_components/ServiceItem";
-import LayersIcon from "../_components/LayersIcon";
-import CodeIcon from "../_components/CodeIcon";
-import AnimationIcon from "../_components/AnimationIcon";
+import AnimationIcon from "../_components/Services/AnimationIcon";
+import CodeIcon from "../_components/Services/CodeIcon";
+import LayersIcon from "../_components/Services/LayersIcon";
+import SectionTitle from "../_components/Others/SectionTitle";
+import ServiceItem from "../_components/Services/ServiceItem";
+import Services from "../_components/Services/Services";
 
 function ServicesSection() {
   return (
-    <section className="mt-10 w-full px-6 lg:mt-20 lg:mb-14">
+    <section className="mt-10 w-full px-6 lg:mt-20 lg:mb-14 lg:min-h-[600px]">
       <SectionTitle title="Services" cn="mb-18 md:mb-24 lg:mb-44" />
       {/* items */}
-      <div className="flex flex-col gap-18 md:flex-row md:justify-center md:gap-8">
+      <Services>
         <ServiceItem
           title="Website Designing"
           description="Crafting visually stunning, responsive, and user-friendly websites tailored to your brand and audience"
@@ -29,7 +29,7 @@ function ServicesSection() {
         >
           <AnimationIcon />
         </ServiceItem>
-      </div>
+      </Services>
     </section>
   );
 }

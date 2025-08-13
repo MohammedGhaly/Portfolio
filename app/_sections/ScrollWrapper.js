@@ -3,7 +3,7 @@
 import { useGSAP } from "@gsap/react";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/all";
-import Logo from "../_components/Logo";
+import Logo from "../_components/Others/Logo";
 import gsap from "gsap";
 import BackgroundGradient from "./BackgroundGradient";
 
@@ -20,7 +20,7 @@ export default function ScrollWrapper({ children }) {
   return (
     <div id="smooth-wrapper">
       <Logo />
-      <BackgroundGradient />
+      {/* <BackgroundGradient /> */}
       <div id="smooth-content">{children}</div>
     </div>
   );
