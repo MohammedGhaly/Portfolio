@@ -3,20 +3,20 @@ import ContactItem from "./ContactItem";
 
 function ContactLinks() {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 xl:gap-[1.5vw]">
       <ContactItem
         title="Email"
         details="ghaly140302@gmail.com"
         href="mailto:ghaly140302@gmail.com"
       >
-        <MailIcon className="h-9 w-9 text-gray-100" />
+        <MailIcon className="h-9 w-9 text-gray-100 xl:h-[2.8vw] xl:w-[2.8vw]" />
       </ContactItem>
       <ContactItem
         title="Phone"
         details="+20 1100286256"
         href="tel:+201100286256"
       >
-        <Phone className="h-9 w-9 text-gray-100" />
+        <Phone className="h-9 w-9 text-gray-100 xl:h-[2.8vw] xl:w-[2.8vw]" />
       </ContactItem>
       <ContactItem
         title="LinkedIn"
@@ -24,7 +24,7 @@ function ContactLinks() {
         href="https://www.linkedin.com/in/mohammed-ghaly-16a401150"
         target="_blank"
       >
-        <Linkedin className="h-9 w-9 text-gray-100" />
+        <Linkedin className="h-9 w-9 text-gray-100 xl:h-[2.8vw] xl:w-[2.8vw]" />
       </ContactItem>
       <ContactItem
         title="WhatsApp"
@@ -33,7 +33,10 @@ function ContactLinks() {
         target="_blank"
       >
         <div className="">
-          <MessageCircle strokeWidth={2} className="h-9 w-9 text-gray-100" />
+          <MessageCircle
+            strokeWidth={2}
+            className="h-9 w-9 text-gray-100 xl:h-[2.8vw] xl:w-[2.8vw]"
+          />
           <Phone
             strokeWidth={3}
             size={13}
@@ -47,7 +50,7 @@ function ContactLinks() {
         href="https://github.com/MohammedGhaly"
         target="_blank"
       >
-        <Github className="h-9 w-9 text-gray-100" />
+        <Github className="h-9 w-9 text-gray-100 xl:h-[2.8vw] xl:w-[2.8vw]" />
       </ContactItem>
     </div>
   );

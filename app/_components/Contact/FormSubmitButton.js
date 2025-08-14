@@ -9,7 +9,7 @@ function FormSubmitButton() {
       <button
         type="submit"
         disabled={pending}
-        className="mx-auto w-fit rounded-full border-[1px] border-white bg-gray-200/20 px-20 py-2 text-lg text-white transition-all duration-300 hover:brightness-[1.18] md:text-xl lg:text-2xl"
+        className="mx-auto w-fit cursor-pointer rounded-full border-[1px] border-white bg-gray-200/20 px-20 py-2 text-lg text-white transition-all duration-300 hover:brightness-[1.18] disabled:cursor-not-allowed disabled:opacity-50 md:text-xl lg:text-2xl xl:text-[2vw]"
       >
         {pending ? "Sending..." : "Send Message"}
       </button>

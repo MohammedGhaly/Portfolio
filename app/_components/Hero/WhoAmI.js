@@ -3,7 +3,7 @@ import TechStack from "./TechStack";
 
 function WhoAmI() {
   return (
-    <div className="w-full border-t border-b border-white/30 py-1">
+    <div className="w-full border-t border-b border-white/30 py-1 2xl:border-t-2 2xl:border-b-2 2xl:py-2">
       <div className="flex flex-col justify-start bg-gray-400/20 py-6 backdrop-blur-xs lg:items-start">
         <HeroTitles />
         <TechStack />

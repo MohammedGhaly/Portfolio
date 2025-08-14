@@ -1,10 +1,12 @@
 "use client";
 
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 
 function SectionTitle({ title, cn }) {
-  useGSAP(() => {
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
+  useEffect(() => {
     gsap.utils.toArray(".section-title").forEach((el) => {
       gsap.fromTo(
         el,
@@ -21,7 +23,14 @@ function SectionTitle({ title, cn }) {
         },
       );
     });
-  }, []);
+
+    return () => {
+      gsap.killTweensOf(".section-title");
+      gsap.utils.toArray(".section-title").forEach((el) => {
+        el.style = "";
+      });
+    };
+  }, [isDesktop]);
 
   return (
     <h1

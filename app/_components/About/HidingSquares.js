@@ -98,12 +98,12 @@ function HidingSquares() {
   }
 
   return (
-    <div className="hiding-squares grid aspect-square grid-cols-3 grid-rows-3 place-items-center gap-7 rounded-2xl bg-gray-400/20 p-7 backdrop-blur-sm *:h-full *:w-full lg:gap-12 lg:p-12">
+    <div className="hiding-squares grid aspect-square grid-cols-3 grid-rows-3 place-items-center gap-7 rounded-2xl bg-gray-400/20 p-7 backdrop-blur-sm *:h-full *:w-full lg:gap-[3.2vw] lg:rounded-[1.6vw] lg:p-[3.2vw]">
       {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
         <div
           key={`sq${i}`}
           id={`sq${i}`}
-          className={`sq${i} relative overflow-hidden rounded-lg`}
+          className={`sq${i} relative overflow-hidden rounded-lg 2xl:rounded-[0.7vw]`}
           onMouseEnter={hide}
         >
           {isMobile ? (

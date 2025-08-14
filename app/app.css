@@ -9,3 +9,7 @@
     transform: perspective(1000px) rotate3d(-7, -2, 5, -20deg);
   }
 }
+html,
+body {
+  cursor: none;
+}

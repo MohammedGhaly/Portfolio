@@ -22,7 +22,7 @@ function AboutSection() {
               date={"2020 - 2025"}
             >
               <GraduationCap
-                className="h-16 w-16 items-start md:h-16 md:w-16 lg:h-20 lg:w-20"
+                className="h-16 w-16 items-start md:h-16 md:w-16 lg:h-[6vw] lg:w-[6vw]"
                 strokeWidth={1}
               />
             </AboutItem>
@@ -36,7 +36,7 @@ function AboutSection() {
               date={"2023 - 2024"}
             >
               <School
-                className="h-16 w-16 items-start md:h-16 md:w-16 lg:h-20 lg:w-20"
+                className="h-16 w-16 items-start md:h-16 md:w-16 lg:h-[6vw] lg:w-[6vw]"
                 strokeWidth={1}
               />
             </AboutItem>
@@ -50,13 +50,13 @@ function AboutSection() {
               date={"2024 - Present"}
             >
               <Code
-                className="h-16 w-16 items-start md:h-16 md:w-16 lg:h-20 lg:w-20"
+                className="h-16 w-16 items-start md:h-16 md:w-16 lg:h-[6vw] lg:w-[6vw]"
                 strokeWidth={1}
               />
             </AboutItem>
           </AboutTitles>
         </div>
-        <div className="w-full px-7 md:flex-1 lg:w-2/5 lg:px-12">
+        <div className="w-full px-7 md:flex-1 lg:w-2/5 lg:px-[3.8vw]">
           <HidingSquares />
         </div>
       </div>

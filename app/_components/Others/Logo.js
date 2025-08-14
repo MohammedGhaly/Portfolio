@@ -23,9 +23,9 @@ function Logo() {
   const strokeDashoffset = 1 - progress;
 
   return (
-    <div className="fixed top-2 left-2 z-20 flex min-h-16 min-w-16 cursor-pointer items-center justify-center rounded-full shadow-lg">
+    <div className="fixed top-2 left-2 z-20 flex min-h-16 min-w-16 cursor-pointer items-center justify-center rounded-full shadow-lg 2xl:h-[4.8vw] 2xl:w-[4.8vw]">
       <svg
-        className={`h-16 w-16 ${strokeDashoffset === 1 ? "hidden" : ""}`}
+        className={`h-16 w-16 2xl:h-[4.8vw] 2xl:w-[4.8vw] ${strokeDashoffset === 1 ? "hidden" : ""}`}
         viewBox="0 0 100 100"
         key={"svg1"}
       >
@@ -44,10 +44,16 @@ function Logo() {
       </svg>
       <div
         key={"svg2"}
-        className="absolute pt-[4px]"
+        className="absolute pt-[4px] 2xl:pt-[0.5vw]"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
-        <Image height={48} width={48} src="/logo.svg" alt="Logo" />
+        <Image
+          height={48}
+          width={48}
+          className="2xl:h-[4vw] 2xl:w-[4vw]"
+          src="/logo.svg"
+          alt="Logo"
+        />
       </div>
     </div>
   );

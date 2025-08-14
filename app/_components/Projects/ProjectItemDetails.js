@@ -8,7 +8,7 @@ const techImages = {
   Typescript: "/tsblue.svg",
   "Next.js": "/nextjsBlack.svg",
   "Tailwind CSS": "/tailwindcss.svg",
-  "Framer-motion": "/framer.svg",
+  "Framer-motion": "/framerMotion.svg",
   "Styled-Components": "/StyledComponents.svg",
   "React Query": "/reactQuery.svg",
   Supabase: "/supabase.svg",
@@ -78,19 +78,19 @@ function ProjectItemDetails({
 
   return (
     <div
-      className={`absolute inset-0 z-10 flex flex-col justify-between rounded-2xl p-4 backdrop-blur-sm transition-opacity duration-300 md:p-10 ${
+      className={`absolute inset-0 z-10 flex flex-col justify-between rounded-2xl p-4 backdrop-blur-sm transition-opacity duration-300 md:p-10 lg:p-[2.2vw] ${
         isHovered ? "opacity-100" : "opacity-0"
       }`}
     >
       <h4
         style={{ color: textColor }}
-        className={`text-2xl font-semibold transition-all duration-200 md:text-6xl`}
+        className={`text-2xl font-semibold transition-all duration-200 md:text-6xl lg:text-[5vw]`}
       >
         {name}
       </h4>
       <p
         style={{ color: textColor }}
-        className={`pr-14 text-base leading-5 normal-case transition-all duration-200 md:pr-22 md:text-3xl md:leading-9 lg:pr-28`}
+        className={`pr-14 text-base leading-5 normal-case transition-all duration-200 md:pr-22 md:text-3xl md:leading-9 lg:pr-[12vw] lg:text-[2.5vw] lg:leading-[2.8vw]`}
       >
         {description}
       </p>
@@ -103,11 +103,11 @@ function ProjectItemDetails({
               alt={tech}
               width={64}
               height={64}
-              className="h-[2.4rem] w-[2.4rem] md:h-22 md:w-22 lg:h-18 lg:w-18"
+              className="h-[2.4rem] w-[2.4rem] md:h-22 md:w-22 lg:h-[5vw] lg:w-[5vw]"
             />
           ))}
         </div>
-        <div className="flex h-fit items-center gap-3 *:cursor-pointer *:transition-all *:duration-200 *:hover:scale-[1.03]">
+        <div className="flex h-fit items-center gap-3 *:cursor-pointer *:transition-all *:duration-200 *:hover:scale-[1.03] lg:gap-[0.8vw]">
           {githubLink && (
             <button
               onClick={() => window.open(githubLink, "_blank")}
@@ -116,9 +116,12 @@ function ProjectItemDetails({
                 color: textColor,
                 backgroundColor: `${textColor}20`,
               }}
-              className={`aspect-square h-fit rounded-full border-[1px] p-2 md:p-3`}
+              className={`aspect-square h-fit rounded-full border-[1px] p-2 md:p-3 lg:p-[1vw]`}
             >
-              <Github color={textColor} className="md:h-10 md:w-10" />
+              <Github
+                color={textColor}
+                className="md:h-[10] md:w-[10] lg:h-[3.2vw] lg:w-[3.2vw]"
+              />
             </button>
           )}
           {liveLink && (
@@ -129,9 +132,12 @@ function ProjectItemDetails({
                 color: textColor,
                 backgroundColor: `${textColor}20`,
               }}
-              className={`aspect-square h-fit rounded-full border-[1px] p-2 md:p-3`}
+              className={`aspect-square h-fit rounded-full border-[1px] p-2 md:p-3 lg:p-[1vw]`}
             >
-              <Binoculars color={textColor} className="md:h-10 md:w-10" />
+              <Binoculars
+                color={textColor}
+                className="md:h-10 md:w-10 lg:h-[3.2vw] lg:w-[3.2vw]"
+              />
             </button>
           )}
         </div>

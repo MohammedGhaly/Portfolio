@@ -1,24 +1,25 @@
 "use client";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 
 function HeroTitles() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
-  useGSAP(() => {
+  // const is2xl = useMediaQuery({ minWidth: 1536 });
+  useEffect(() => {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 2 });
 
     tl.to(".closingBracket", {
       delay: 2,
       duration: 0.4,
-      x: 8,
+      x: "9.6vw",
       ease: "back.inOut",
     })
       .to(
         ".fh",
         {
           duration: 1,
-          y: -100,
+          y: "-110%",
           stagger: 0.2,
           ease: "power2.out",
         },
@@ -28,7 +29,7 @@ function HeroTitles() {
         ".sh",
         {
           duration: 1,
-          y: isMobile ? -50 : -70,
+          y: isMobile ? -50 : "-100%",
           stagger: 0.2,
           ease: "power2.out",
         },
@@ -40,7 +41,7 @@ function HeroTitles() {
       .to(".sh", {
         delay: 5,
         duration: 1,
-        y: isMobile ? -110 : -150,
+        y: isMobile ? -110 : "-210%",
         stagger: 0.2,
         ease: "power2.out",
       })
@@ -57,23 +58,31 @@ function HeroTitles() {
       .to(
         ".closingBracket",
         {
-          x: -120,
+          x: 0,
           duration: 0.4,
           ease: "back.inOut",
         },
         "-=0.8",
       )
       .set(".sh", { y: 0 });
-  });
+
+    return () => {
+      tl.kill();
+      gsap.utils.toArray(".fh, .sh, .closingBracket").forEach((el) => {
+        el.style = "";
+      });
+    };
+  }, [isMobile]);
+
   return (
     <div className="h-fit w-full lg:flex lg:w-[50vw] lg:justify-center">
       <div className="mb-6 flex h-fit flex-1 justify-center gap-8 py-1 text-white lg:mb-18 lg:justify-center">
-        <div className="flex flex-col bg-transparent *:flex *:items-center *:justify-center *:text-5xl *:tracking-[0.2rem] *:md:text-7xl">
+        <div className="flex flex-col bg-transparent *:flex *:items-center *:justify-center *:text-5xl *:tracking-[0.2rem] *:md:text-7xl lg:-ml-[6vw] *:lg:text-6xl *:xl:text-[5.2vw]">
           <div className="hidden gap-4 lg:flex">
-            <p className="text-yellow hidden self-start align-top text-5xl font-bold lg:block lg:-translate-x-2 lg:text-6xl">
+            <p className="text-yellow hidden self-start align-top text-5xl font-bold lg:block lg:-translate-x-2 lg:text-5xl xl:text-[4.2vw] 2xl:-translate-x-[1vw]">
               {"{"}
             </p>{" "}
-            <div className="flex flex-col items-center gap-2 lg:items-start lg:gap-0">
+            <div className="flex flex-col items-center gap-2 lg:items-start lg:gap-0 *:lg:h-16 *:xl:h-[5.4vw] *:*:2xl:border-b-3">
               <div className="flex h-13 w-full flex-col items-center overflow-hidden md:h-20 lg:items-start">
                 <h2 className="border-orange fh w-fit border-b uppercase">I</h2>
                 <h2 className="border-orange sh w-fit border-b uppercase">
@@ -105,7 +114,8 @@ function HeroTitles() {
                 </h2>
               </div>
             </div>
-            <p className="text-yellow closingBracket hidden translate-y-2 self-start align-top text-5xl font-bold lg:mb-2 lg:block lg:-translate-x-32 lg:-translate-y-1 lg:self-end lg:text-6xl">
+            {/* <p className="text-yellow closingBracket hidden translate-y-2 self-start align-top text-5xl font-bold lg:mb-2 lg:block lg:-translate-x-32 lg:-translate-y-1 lg:self-end lg:text-6xl 2xl:ml-20 2xl:-translate-x-[8vw] 2xl:-translate-y-[0.4vw] 2xl:text-[4.2vw]"> */}
+            <p className="text-yellow closingBracket hidden translate-y-2 self-start align-top text-5xl font-bold lg:mb-2 lg:-ml-[9vw] lg:block lg:-translate-y-1 lg:self-end lg:text-5xl 2xl:-translate-y-[0.4vw] 2xl:text-[4.2vw]">
               {"}"}
             </p>
           </div>

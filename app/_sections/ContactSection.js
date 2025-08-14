@@ -4,15 +4,15 @@ import SectionTitle from "../_components/Others/SectionTitle";
 
 function ContactSection() {
   return (
-    <section className="flex flex-col gap-10 bg-gray-400/20 pt-10 backdrop-blur-xs">
+    <section className="flex flex-col gap-10 bg-gray-400/20 pt-10 backdrop-blur-xs xl:h-screen xl:gap-[2.8vw]">
       <SectionTitle title="Contact" />
 
       <div className="flex flex-col p-6 md:flex-row md:gap-6 md:py-10 md:pl-10 lg:gap-12 lg:pb-4">
         <div className="w-full text-white md:w-3/5">
           <ContactForm />
         </div>
-        <div className="mt-6 w-full p-6 md:flex-1 md:space-y-8">
-          <h4 className="hidden w-full text-start text-white md:block md:text-2xl lg:text-3xl">
+        <div className="mt-6 w-full p-6 md:flex-1 md:space-y-8 xl:mt-0 xl:py-0">
+          <h4 className="hidden w-full text-start text-white md:block md:text-2xl lg:text-[2.2vw]">
             Let&apos;s discuss projects
           </h4>
           <ContactLinks />

@@ -16,7 +16,7 @@ function HeroImageGradient() {
           alt="Mohamed Ghaly"
           className="absolute bottom-0 left-1/2 z-10 h-[83%] w-auto -translate-x-1/2 translate-y-2"
         />
-        <p className="lg:text absolute top-3 right-1/2 w-fit translate-x-[55%] bg-gradient-to-b from-white/90 to-white/0 bg-clip-text text-7xl tracking-[1.8rem] text-transparent md:text-8xl md:tracking-[2.4rem] lg:top-10 lg:text-9xl lg:tracking-[3.4rem]">
+        <p className="ghaly lg:text absolute top-3 right-1/2 w-fit translate-x-[55%] bg-gradient-to-b from-white/90 to-white/0 bg-clip-text text-7xl tracking-[1.8rem] text-transparent md:text-8xl md:tracking-[2.4rem] lg:top-10 lg:text-9xl lg:tracking-[3.4rem] 2xl:text-[10vw] 2xl:tracking-[3.4vw]">
           {"GHALY"}
         </p>
         <SocialLinks />
@@ -27,14 +27,14 @@ function HeroImageGradient() {
 
 function SocialLinks() {
   return (
-    <div className="absolute right-4 bottom-12 flex w-fit flex-col gap-3 lg:bottom-8">
+    <div className="absolute right-4 bottom-12 flex w-fit flex-col gap-3 lg:bottom-8 2xl:right-[1.4vw] 2xl:bottom-[1.9vw] 2xl:gap-4">
       <Link
         target="_blank"
         rel="noopener noreferrer"
         href={"https://x.com/XXXGhalytacion?t=595mPwo3_QSm0jGEP0CSSQ&s=09"}
       >
         <Image
-          className="w-6 transition-all duration-300 ease-in-out lg:w-10 lg:opacity-60 lg:hover:opacity-100"
+          className="w-6 transition-all duration-300 ease-in-out lg:w-10 lg:opacity-60 lg:hover:opacity-100 2xl:w-[2.7vw]"
           src={x}
           alt="link to X account"
         />
@@ -45,7 +45,7 @@ function SocialLinks() {
         href={"https://github.com/MohammedGhaly"}
       >
         <Image
-          className="w-6 transition-all duration-300 ease-in-out lg:w-10 lg:opacity-60 lg:hover:opacity-100"
+          className="w-6 transition-all duration-300 ease-in-out lg:w-10 lg:opacity-60 lg:hover:opacity-100 2xl:w-[2.7vw]"
           src={github}
           alt="link to Github account"
         />
@@ -58,7 +58,7 @@ function SocialLinks() {
         }
       >
         <Image
-          className="w-6 transition-all duration-300 ease-in-out lg:w-10 lg:opacity-60 lg:hover:opacity-100"
+          className="w-6 transition-all duration-300 ease-in-out lg:w-10 lg:opacity-60 lg:hover:opacity-100 2xl:w-[2.7vw]"
           src={linkedin}
           alt="link to Linkedin account"
         />

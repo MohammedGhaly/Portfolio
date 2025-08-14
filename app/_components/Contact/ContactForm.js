@@ -2,9 +2,9 @@ import { submitContactForm } from "../../_services/actions";
 import FormSubmitButton from "./FormSubmitButton";
 
 const inputCn =
-  "border-b-[1px] border-gray-300 text-white focus:outline-none md:text-xl lg:text-2xl transition-all duration-200";
+  "border-b-[1px] border-gray-300 text-white focus:outline-none md:text-xl lg:text-2xl transition-all duration-200 xl:text-[1.8vw]";
 
-const labelCn = "text-gray-200 text-sm md:text-lg lg:text-xl";
+const labelCn = "text-gray-200 text-sm md:text-lg lg:text-xl xl:text-[1.6vw]";
 
 function ContactForm() {
   return (
@@ -21,7 +21,7 @@ function ContactForm() {
           <input
             type="email"
             name="email"
-            placeholder="email"
+            // placeholder="email"
             required
             className={`${inputCn} focus:border-orange-400`}
           />
@@ -33,7 +33,7 @@ function ContactForm() {
           <input
             type="text"
             name="name"
-            placeholder="name"
+            // placeholder="name"
             required
             className={`${inputCn} focus:border-purple-700`}
           />
@@ -46,7 +46,7 @@ function ContactForm() {
         <input
           type="text"
           name="subject"
-          placeholder="subject"
+          // placeholder="subject"
           className={`${inputCn} focus:border-cyan-500`}
         />
       </div>
@@ -56,10 +56,10 @@ function ContactForm() {
         </label>
         <textarea
           name="message"
-          placeholder="message"
+          // placeholder="message"
           required
           rows={4}
-          className={`${inputCn} resize-y rounded-md border-[1px] p-2 focus:border-pink-500`}
+          className={`${inputCn} resize-y rounded-md border-[1px] p-2 focus:border-pink-500 xl:max-h-[25vh]`}
         ></textarea>
       </div>
 
