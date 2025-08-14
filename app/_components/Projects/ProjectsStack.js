@@ -16,8 +16,7 @@ function ProjectsStack({ children }) {
       type: "scroll",
       edgeResistance: 0.9,
       dragClickables: true,
-      cursor: "grab",
-      activeCursor: "grabbing",
+      cursor: "none",
     });
   });
 

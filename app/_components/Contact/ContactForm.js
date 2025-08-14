@@ -56,7 +56,6 @@ function ContactForm() {
         </label>
         <textarea
           name="message"
-          // placeholder="message"
           required
           rows={4}
           className={`${inputCn} resize-y rounded-md border-[1px] p-2 focus:border-pink-500 xl:max-h-[25vh]`}

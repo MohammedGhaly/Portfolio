@@ -107,7 +107,7 @@ function ProjectItemDetails({
             />
           ))}
         </div>
-        <div className="flex h-fit items-center gap-3 *:cursor-pointer *:transition-all *:duration-200 *:hover:scale-[1.03] lg:gap-[0.8vw]">
+        <div className="flex h-fit items-center gap-3 *:transition-all *:duration-200 *:hover:scale-[1.03] lg:gap-[0.8vw]">
           {githubLink && (
             <button
               onClick={() => window.open(githubLink, "_blank")}

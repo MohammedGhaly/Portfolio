@@ -23,7 +23,7 @@ function Logo() {
   const strokeDashoffset = 1 - progress;
 
   return (
-    <div className="fixed top-2 left-2 z-20 flex min-h-16 min-w-16 cursor-pointer items-center justify-center rounded-full shadow-lg 2xl:h-[4.8vw] 2xl:w-[4.8vw]">
+    <div className="fixed top-2 left-2 z-20 flex min-h-16 min-w-16 items-center justify-center rounded-full shadow-lg 2xl:h-[4.8vw] 2xl:w-[4.8vw]">
       <svg
         className={`h-16 w-16 2xl:h-[4.8vw] 2xl:w-[4.8vw] ${strokeDashoffset === 1 ? "hidden" : ""}`}
         viewBox="0 0 100 100"

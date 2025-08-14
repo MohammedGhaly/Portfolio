@@ -6,7 +6,7 @@ function AboutItem({ title, description, date, children }) {
       {children}
       <div className="flex w-full flex-col gap-1">
         <div className="flex items-center justify-between">
-          <h2 className="flex-1 text-lg normal-case md:text-2xl lg:text-[2.2vw]">
+          <h2 className="flex-1 text-[1.25rem] normal-case md:text-2xl lg:text-[2.2vw]">
             {title}
           </h2>
           <AboutItemDate date={date} />

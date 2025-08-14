@@ -20,7 +20,7 @@ export default function ScrollWrapper({ children }) {
   return (
     <div id="smooth-wrapper">
       <Logo />
-      {/* <BackgroundGradient /> */}
+      <BackgroundGradient />
       <div id="smooth-content">{children}</div>
     </div>
   );

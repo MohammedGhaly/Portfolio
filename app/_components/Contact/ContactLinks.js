@@ -1,5 +1,6 @@
 import { Github, Linkedin, MailIcon, MessageCircle, Phone } from "lucide-react";
 import ContactItem from "./ContactItem";
+import Image from "next/image";
 
 function ContactLinks() {
   return (
@@ -33,14 +34,12 @@ function ContactLinks() {
         target="_blank"
       >
         <div className="">
-          <MessageCircle
-            strokeWidth={2}
+          <Image
+            width={36}
+            height={36}
+            src="/whatsapp.svg"
+            alt="WhatsApp"
             className="h-9 w-9 text-gray-100 xl:h-[2.8vw] xl:w-[2.8vw]"
-          />
-          <Phone
-            strokeWidth={3}
-            size={13}
-            className="absolute top-[50%] left-[50%] h-4 w-4 -translate-x-1/2 -translate-y-1/2 text-gray-100 lg:top-[47%]"
           />
         </div>
       </ContactItem>
