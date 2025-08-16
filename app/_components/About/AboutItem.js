@@ -2,7 +2,7 @@ import AboutItemDate from "./AboutItemDate";
 
 function AboutItem({ title, description, date, children }) {
   return (
-    <div className="about-item flex w-full items-center gap-4 rounded-lg bg-gray-400/20 px-3 py-3 backdrop-blur-xs md:px-4 md:py-4 lg:gap-[2vw] lg:rounded-[1vw]">
+    <div className="about-item flex w-full items-center gap-4 rounded-xl bg-gray-400/20 px-3 py-3 backdrop-blur-xs md:px-4 md:py-4 lg:gap-[2vw] lg:rounded-[1vw]">
       {children}
       <div className="flex w-full flex-col gap-1">
         <div className="flex items-center justify-between">
