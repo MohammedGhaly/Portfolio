@@ -27,12 +27,12 @@ function TechStack() {
       <Image
         src={tailwind}
         alt="tailwind.css"
-        className="h-15 w-15 lg:h-12 lg:w-12 2xl:h-[4.1vw] 2xl:w-[4.1vw]"
+        className="h-12 w-12 lg:h-12 lg:w-12 2xl:h-[4.1vw] 2xl:w-[4.1vw]"
       />
       <Image
         src={gsapp}
         alt="gsap"
-        className="h-16 w-16 lg:h-11 lg:w-11 2xl:h-[4.1vw] 2xl:w-[4.1vw]"
+        className="h-13 w-13 lg:h-11 lg:w-11 2xl:h-[4.1vw] 2xl:w-[4.1vw]"
       />
     </div>
   );
