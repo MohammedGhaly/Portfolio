@@ -6,28 +6,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Gradient from "./Gradient";
 
-import grad0 from "../../../public/gradient-0.png";
-import grad1 from "../../../public/gradient-1.png";
-import grad2 from "../../../public/gradient-2.png";
-import grad3 from "../../../public/gradient-3.png";
-import grad4 from "../../../public/gradient-4.png";
-import grad5 from "../../../public/gradient-5.png";
-import grad6 from "../../../public/gradient-6.png";
-import grad7 from "../../../public/gradient-7.png";
-import grad8 from "../../../public/gradient-8.png";
-
-const gradientImages = [
-  grad0,
-  grad1,
-  grad2,
-  grad3,
-  grad4,
-  grad5,
-  grad6,
-  grad7,
-  grad8,
-];
-
 const gradientUrls = [
   "https://www.shadergradient.co/customize?animate=on&axesHelper=off&bgColor1=%23000000&bgColor2=%23000000&brightness=1.2&cAzimuthAngle=180&cDistance=2.9&cPolarAngle=120&cameraZoom=1&color1=%238fffc5&color2=%23c2e3ff&color3=%23fffaf2&destination=onCanvas&embedMode=off&envPreset=city&format=gif&fov=45&frameRate=10&gizmoHelper=hide&grain=off&lightType=3d&pixelDensity=1&positionX=0&positionY=1.8&positionZ=0&range=enabled&rangeEnd=40&rangeStart=0&reflection=0.1&rotationX=0&rotationY=0&rotationZ=-90&shader=defaults&type=waterPlane&uDensity=1&uFrequency=5.5&uSpeed=0.3&uStrength=3&uTime=0.2&wireframe=false",
   "https://www.shadergradient.co/customize?animate=on&axesHelper=off&brightness=0.8&cAzimuthAngle=270&cDistance=0.5&cPolarAngle=180&cameraZoom=15.1&color1=%2373bfc4&color2=%23ff810a&color3=%238da0ce&destination=onCanvas&embedMode=off&envPreset=city&format=gif&fov=45&frameRate=10&gizmoHelper=hide&grain=on&lightType=env&pixelDensity=1&positionX=-0.1&positionY=0&positionZ=0&range=enabled&rangeEnd=40&rangeStart=0&reflection=0.4&rotationX=0&rotationY=130&rotationZ=70&shader=defaults&type=sphere&uAmplitude=3.2&uDensity=0.8&uFrequency=5.5&uSpeed=0.3&uStrength=0.3&uTime=0&wireframe=false",

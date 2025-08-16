@@ -42,5 +42,5 @@ next-env.d.ts
 
 # others
 notes.txt
-raw_videos
+localFiles
 .vscode
