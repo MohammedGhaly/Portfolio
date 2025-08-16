@@ -12,3 +12,17 @@
 * {
   cursor: none;
 }
+
+[id^="project"] div,
+[id^="project"] p,
+[id^="project"] h4 {
+  cursor: grab;
+  :active {
+    cursor: grabbing;
+  }
+}
+
+[id^="projectBtn"],
+[id^="projectBtn"] svg {
+  cursor: pointer;
+}

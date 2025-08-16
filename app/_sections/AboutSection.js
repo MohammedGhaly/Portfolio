@@ -56,9 +56,8 @@ function AboutSection() {
             </AboutItem>
           </AboutTitles>
         </div>
-        <div className="w-full px-7 md:flex-1 lg:w-2/5 lg:px-[3.8vw]">
-          <HidingSquares />
-        </div>
+
+        <HidingSquares />
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ function ContactItem({ title, details, children, href, target }) {
   return (
     <Link href={href} target={target}>
       <div className="flex gap-3 overflow-hidden xl:gap-[1vw]">
-        <div className="overflow-hidden rounded-lg bg-gray-100/10 p-3 backdrop-blur-xs transition-all duration-300 hover:brightness-[1.25]">
+        <div className="overflow-hidden rounded-lg bg-gray-100/10 p-3 backdrop-blur-xs transition-all duration-300 hover:brightness-[1.25] xl:p-[0.8vw]">
           {children}
         </div>
         <div className="flex flex-col gap-1 xl:gap-[0.4vw]">

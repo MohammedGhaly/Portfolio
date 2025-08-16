@@ -26,6 +26,7 @@ function ProjectItem({
 
   return (
     <div
+      id={`project-${name}`}
       className="group relative flex aspect-video w-full items-center overflow-hidden rounded-2xl shadow-2xl"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}

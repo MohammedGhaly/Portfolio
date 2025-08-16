@@ -110,6 +110,7 @@ function ProjectItemDetails({
         <div className="flex h-fit items-center gap-3 *:transition-all *:duration-200 *:hover:scale-[1.03] lg:gap-[0.8vw]">
           {githubLink && (
             <button
+              id={`projectBtn-${name}-github`}
               onClick={() => window.open(githubLink, "_blank")}
               style={{
                 borderColor: textColor,
@@ -126,6 +127,7 @@ function ProjectItemDetails({
           )}
           {liveLink && (
             <button
+              id={`projectBtn-${name}-demo`}
               onClick={() => window.open(liveLink, "_blank")}
               style={{
                 borderColor: textColor,

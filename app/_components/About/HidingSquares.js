@@ -44,10 +44,15 @@ function HidingSquares() {
   const [hideIdx, setHideIdx] = useState(-1);
   const [hiddenIdx, setHiddenIdx] = useState(-1);
   const [transitioning, setTransitioning] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth <= 768);
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
   useGSAP(() => {
@@ -85,6 +90,10 @@ function HidingSquares() {
     });
   }, [isMobile]);
 
+  if (isMobile) {
+    return null;
+  }
+
   function hide(e) {
     if (transitioning) return; // to Prevent interaction during transition
     e.preventDefault();
@@ -98,26 +107,28 @@ function HidingSquares() {
   }
 
   return (
-    <div className="hiding-squares grid aspect-square grid-cols-3 grid-rows-3 place-items-center gap-7 rounded-2xl bg-gray-400/20 p-7 backdrop-blur-sm *:h-full *:w-full lg:gap-[3.2vw] lg:rounded-[1.6vw] lg:p-[3.2vw]">
-      {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-        <div
-          key={`sq${i}`}
-          id={`sq${i}`}
-          className={`sq${i} relative overflow-hidden rounded-lg 2xl:rounded-[0.7vw]`}
-          onMouseEnter={hide}
-        >
-          {isMobile ? (
-            <Image
-              id={`img-sq${i}`}
-              className={`h-full w-full`}
-              src={gradientImages[i]}
-              alt={`gradient-${i}`}
-            />
-          ) : (
-            <Gradient urlString={gradientUrls[i]} />
-          )}
-        </div>
-      ))}
+    <div className="w-full px-7 md:flex-1 lg:w-2/5 lg:px-[3.8vw]">
+      <div className="hiding-squares grid aspect-square grid-cols-3 grid-rows-3 place-items-center gap-7 rounded-2xl bg-gray-400/20 p-7 backdrop-blur-sm *:h-full *:w-full lg:gap-[3.2vw] lg:rounded-[1.6vw] lg:p-[3.2vw]">
+        {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+          <div
+            key={`sq${i}`}
+            id={`sq${i}`}
+            className={`sq${i} relative overflow-hidden rounded-lg 2xl:rounded-[0.7vw]`}
+            onMouseEnter={hide}
+          >
+            {isMobile ? (
+              <Image
+                id={`img-sq${i}`}
+                className={`h-full w-full`}
+                src={gradientImages[i]}
+                alt={`gradient-${i}`}
+              />
+            ) : (
+              <Gradient urlString={gradientUrls[i]} />
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
