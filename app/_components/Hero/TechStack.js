@@ -8,7 +8,7 @@ import nextjs from "@/public/nextjs.svg";
 
 function TechStack() {
   return (
-    <div className="techs-div flex h-fit w-full items-center justify-around bg-gray-600/10 px-2 py-3 backdrop-blur-xs *:transition-all *:duration-300 *:ease-in-out md:justify-center md:gap-10 lg:justify-around lg:gap-0 lg:py-2 lg:pr-[50%] lg:pl-6 *:lg:opacity-40 *:lg:hover:opacity-100 xl:py-[1.2vw]">
+    <div className="techs-div flex h-fit w-full items-center justify-around bg-gray-600/10 px-2 py-3 backdrop-blur-xs *:transition-all *:duration-300 *:ease-in-out md:justify-center md:gap-10 lg:justify-around lg:gap-0 lg:px-4 lg:py-2 lg:pr-[45%] *:lg:opacity-40 *:lg:hover:opacity-100 xl:-mt-[3vw] xl:py-[1.2vw]">
       <Image
         src={ts}
         alt="typescript"
@@ -27,12 +27,12 @@ function TechStack() {
       <Image
         src={tailwind}
         alt="tailwind.css"
-        className="h-12 w-12 lg:h-12 lg:w-12 2xl:h-[4.1vw] 2xl:w-[4.1vw]"
+        className="h-12 w-12 lg:h-12 lg:w-12 xl:h-[4.4vw] xl:w-[4.4vw]"
       />
       <Image
         src={gsapp}
         alt="gsap"
-        className="h-13 w-13 lg:h-11 lg:w-11 2xl:h-[4.1vw] 2xl:w-[4.1vw]"
+        className="h-13 w-13 lg:h-11 lg:w-11 xl:h-[4.4vw] xl:w-[4.4vw]"
       />
     </div>
   );

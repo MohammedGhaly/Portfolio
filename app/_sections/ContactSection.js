@@ -4,7 +4,7 @@ import SectionTitle from "../_components/Others/SectionTitle";
 
 function ContactSection() {
   return (
-    <section className="flex flex-col gap-10 bg-gray-400/20 pt-10 backdrop-blur-xs xl:h-screen xl:gap-[2.8vw]">
+    <section className="flex flex-col gap-10 bg-gray-400/20 pt-10 backdrop-blur-xs xl:h-screen xl:gap-[1.8vw] xl:pt-3">
       <SectionTitle title="Contact" />
 
       <div className="flex flex-col p-6 md:flex-row md:gap-6 md:py-10 md:pl-10 lg:gap-12 lg:pb-4">

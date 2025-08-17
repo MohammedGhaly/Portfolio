@@ -8,7 +8,7 @@ import github from "@/public/github.svg";
 
 function HeroImageGradient() {
   return (
-    <div className="px-8 md:px-48 lg:w-1/2 lg:self-start lg:px-0">
+    <div className="px-8 md:px-48 lg:w-[50%] lg:self-start lg:px-0 xl:w-[45%]">
       <div className="relative z-10 mt-20 aspect-square w-full overflow-hidden rounded-[2.4rem] bg-[url('/gradient-bg.png')] bg-cover bg-center md:mt-24 lg:mt-0 lg:h-[90%] lg:w-full lg:rounded-none lg:rounded-bl-[120px]">
         <HeroGradient />
         <Image
@@ -16,7 +16,7 @@ function HeroImageGradient() {
           alt="Mohamed Ghaly"
           className="absolute bottom-0 left-1/2 z-10 h-[83%] w-auto -translate-x-1/2 translate-y-2"
         />
-        <p className="ghaly lg:text absolute top-3 right-1/2 w-fit translate-x-[55%] bg-gradient-to-b from-white/90 to-white/0 bg-clip-text text-7xl tracking-[1.8rem] text-transparent md:text-8xl md:tracking-[2.4rem] lg:top-10 lg:text-9xl lg:tracking-[3.4rem] 2xl:text-[10vw] 2xl:tracking-[3.4vw]">
+        <p className="ghaly absolute top-3 right-1/2 w-fit translate-x-[55%] bg-gradient-to-b from-white/90 to-white/0 bg-clip-text text-7xl tracking-[1.8rem] text-transparent md:text-8xl md:tracking-[2.4rem] lg:top-10 lg:text-8xl lg:tracking-[3.4rem] xl:text-[10vw] xl:tracking-[3.4vw]">
           {"GHALY"}
         </p>
         <SocialLinks />

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function ContactLinks() {
   return (
-    <div className="flex flex-col gap-5 xl:gap-[1.5vw]">
+    <div className="flex flex-col gap-5 xl:gap-[1vw]">
       <ContactItem
         title="Email"
         details="ghaly140302@gmail.com"

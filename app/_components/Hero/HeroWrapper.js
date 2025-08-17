@@ -7,8 +7,6 @@ import { useMediaQuery } from "react-responsive";
 function HeroWrapper({ children }) {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
   useEffect(() => {
-    console.log("isDesktop", isDesktop);
-
     if (isDesktop) {
       const tl = gsap.timeline();
       const tl2 = gsap.timeline();
@@ -42,7 +40,7 @@ function HeroWrapper({ children }) {
     };
   }, [isDesktop]);
   return (
-    <div className="hero-wrapper flex w-full lg:absolute lg:top-20 xl:top-[7.6vw]">
+    <div className="hero-wrapper flex w-full lg:absolute lg:top-20 xl:top-[6vw]">
       {children}
     </div>
   );
