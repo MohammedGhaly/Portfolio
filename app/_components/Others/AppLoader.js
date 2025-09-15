@@ -6,12 +6,16 @@ export default function AppLoader({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    gsap.to(".loader", {
-      x: "-100%",
-      duration: 0.5,
-      ease: "power1.inOut",
-      onComplete: () => setLoading(false),
-    });
+    setTimeout(
+      () =>
+        gsap.to(".loader", {
+          x: "-100%",
+          duration: 0.5,
+          ease: "power1.inOut",
+          onComplete: () => setLoading(false),
+        }),
+      2300,
+    );
   }, []);
 
   if (loading) {
