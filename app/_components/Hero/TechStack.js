@@ -1,7 +1,7 @@
 import Image from "next/image";
 import reactIcon from "@/public/react.svg";
 import ts from "@/public/ts.svg";
-// import three from "@/public/threejs.svg";
+import vue from "@/public/vueBlack.svg";
 import tailwind from "@/public/tailwind-white.svg";
 import gsapp from "@/public/gsap.svg";
 import nextjs from "@/public/nextjs.svg";
@@ -22,6 +22,11 @@ function TechStack() {
       <Image
         src={nextjs}
         alt="next.js"
+        className="h-10 w-10 lg:h-11 lg:w-11 xl:h-[4vw] xl:w-[4vw]"
+      />
+      <Image
+        src={vue}
+        alt="Vue.js"
         className="h-10 w-10 lg:h-11 lg:w-11 xl:h-[4vw] xl:w-[4vw]"
       />
       <Image

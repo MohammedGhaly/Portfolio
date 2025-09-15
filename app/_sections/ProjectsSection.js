@@ -5,14 +5,14 @@ import ProjectItem from "../_components/Projects/ProjectItem";
 function ProjectsSection() {
   return (
     <section className="mt-14 w-full overflow-hidden uppercase lg:mt-28">
-      <SectionTitle title="Projects" cn={"mb-14 lg:mb-[2vw] "} />
+      <SectionTitle title="Projects" cn={"mb-14 lg:mb-[2vw]"} />
       <ProjectsStack>
         <ProjectItem
           src="/videos/turjumanDemo.mp4"
           cn={null}
           name={"Turjuman"}
           description={
-            "An Ai-powered translation application that provides accurate translations, supporting multiple languages and media translation."
+            "An Ai-powered translation app that provides accurate translations, supporting multiple languages and media translation."
           }
           techStack={[
             "React.js",
@@ -23,6 +23,19 @@ function ProjectsSection() {
           lightText={"#bdd8f1"}
           darkText={"#1b252e"}
           githubLink={"https://github.com/MohammedGhaly/Turjuman"}
+        />
+        <ProjectItem
+          src="/videos/vmovieDemo.mp4"
+          cn={null}
+          name={"VMOVIE"}
+          description={
+            "A social platform where users can share and compare their personal movie ratings, reviews, and opinions with others."
+          }
+          techStack={["Vue.js", "GSAP", "Tailwind CSS"]}
+          lightText={"#dccbee"}
+          darkText={"#000"}
+          githubLink={"https://github.com/MohammedGhaly/VMOVIE"}
+          liveLink={"https://vmovi.netlify.app/"}
         />
 
         <ProjectItem
@@ -61,7 +74,7 @@ function ProjectsSection() {
           name={"Spylt landing page"}
           techStack={["React.js", "Tailwind CSS", "GSAP"]}
           description={
-            "Modern responsive landing page with GSAP animations, smooth transitions, and polished design built using React and Tailwind CSS."
+            "Modern responsive landing page with GSAP animations, and polished design built using React and Tailwind CSS."
           }
           lightText={"#eee4D7"}
           darkText={"#513125"}

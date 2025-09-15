@@ -13,6 +13,7 @@ const techImages = {
   "React Query": "/reactQuery.svg",
   Supabase: "/supabase.svg",
   "Next-Auth": "/next-auth.svg",
+  "Vue.js": "/vue.svg",
 };
 
 function ProjectItemDetails({
@@ -103,7 +104,7 @@ function ProjectItemDetails({
               alt={tech}
               width={64}
               height={64}
-              className="h-[2.4rem] w-[2.4rem] md:h-22 md:w-22 lg:h-[5vw] lg:w-[5vw]"
+              className="h-[2.4rem] w-[2.4rem] md:h-22 md:w-22 lg:h-[4.5vw] lg:w-[4.5vw]"
             />
           ))}
         </div>

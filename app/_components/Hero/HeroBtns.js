@@ -12,7 +12,7 @@ function HeroBtns() {
   return (
     <div className="btns-div md:gap- flex w-full items-center justify-between gap-4 p-8 *:w-full *:rounded-full *:py-4 *:text-center *:text-xl *:font-semibold *:transition-all *:duration-200 md:justify-between md:px-32 *:md:w-full *:md:text-2xl lg:justify-start lg:pr-[55%] lg:pl-20 *:lg:py-3 *:lg:text-xl *:xl:text-[1.6vw] 2xl:gap-[1.8vw] 2xl:pl-[6vw] *:2xl:py-[1vw]">
       <button
-        className="text-darkBlue bg-white hover:brightness-90"
+        className="text-darkBlue bg-gray-300 hover:bg-white"
         onClick={() =>
           window.open(
             "https://drive.google.com/file/d/1uu_j1Z9Gh49deGuURvtWFBdS4BmQsR1r/view?usp=sharing",
