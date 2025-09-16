@@ -85,7 +85,7 @@ function ProjectItemDetails({
     >
       <h4
         style={{ color: textColor }}
-        className={`text-2xl font-semibold transition-all duration-200 md:text-6xl lg:text-[5vw]`}
+        className={`text-2xl font-semibold transition-all duration-200 md:text-6xl lg:text-[4.8vw]`}
       >
         {name}
       </h4>
