@@ -15,7 +15,7 @@ function HeroBtns() {
         className="text-darkBlue bg-gray-300 hover:bg-white"
         onClick={() =>
           window.open(
-            "https://drive.google.com/file/d/1uu_j1Z9Gh49deGuURvtWFBdS4BmQsR1r/view?usp=sharing",
+            "https://drive.google.com/file/d/1ZekGnaPsFwUt_ITFcEnn3-EqTQb7FVOo/view?usp=sharing",
             "_blank",
           )
         }
