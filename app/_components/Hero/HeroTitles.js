@@ -5,12 +5,11 @@ import { useMediaQuery } from "react-responsive";
 
 function HeroTitles() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
-  // const is2xl = useMediaQuery({ minWidth: 1536 });
   useEffect(() => {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 2 });
 
     tl.to(".closingBracket", {
-      delay: 2,
+      delay: 1,
       duration: 0.4,
       x: "9.6vw",
       ease: "back.inOut",
@@ -29,7 +28,7 @@ function HeroTitles() {
         ".sh",
         {
           duration: 1,
-          y: isMobile ? -50 : "-100%",
+          y: "-100%",
           stagger: 0.2,
           ease: "power2.out",
         },
@@ -39,9 +38,9 @@ function HeroTitles() {
         y: 100,
       })
       .to(".sh", {
-        delay: 5,
+        delay: 3,
         duration: 1,
-        y: isMobile ? -110 : "-210%",
+        y: "-210%",
         stagger: 0.2,
         ease: "power2.out",
       })
@@ -114,8 +113,7 @@ function HeroTitles() {
                 </h2>
               </div>
             </div>
-            {/* <p className="text-yellow closingBracket hidden translate-y-2 self-start align-top text-5xl font-bold lg:mb-2 lg:block lg:-translate-x-32 lg:-translate-y-1 lg:self-end lg:text-6xl 2xl:ml-20 2xl:-translate-x-[8vw] 2xl:-translate-y-[0.4vw] 2xl:text-[4.2vw]"> */}
-            <p className="text-yellow closingBracket hidden translate-y-2 self-start align-top text-5xl font-bold lg:mb-2 lg:-ml-[9vw] lg:block lg:-translate-y-1 lg:self-end lg:text-5xl 2xl:-translate-y-[0.4vw] 2xl:text-[4.2vw]">
+            <p className="text-yellow closingBracket hidden translate-y-2 self-start align-top text-5xl font-bold lg:mb-2 lg:-ml-[9vw] lg:block lg:-translate-y-1 lg:self-end lg:text-5xl xl:text-[4.2vw] 2xl:-translate-y-[0.4vw]">
               {"}"}
             </p>
           </div>

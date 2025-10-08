@@ -27,7 +27,7 @@ function ServicesSection() {
           <CodeIcon />
         </ServiceItem>
         <ServiceItem
-          title="Animated Websites"
+          title="Animation-rich UIs"
           description="Creating engaging animations and interactive elements to captivate visitors and enhance storytelling"
         >
           <AnimationIcon />

@@ -3,6 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import ProjectItemDetails from "./ProjectItemDetails";
 
+const titleSizeSm = `text-2xl md:text-5xl lg:text-[4.5vw]`;
+const titleSizeLg = `text-2xl md:text-4xl lg:text-[3.2vw]`;
+
 function ProjectItem({
   src,
   cn,
@@ -42,6 +45,7 @@ function ProjectItem({
         darkText={darkText}
         githubLink={githubLink}
         liveLink={liveLink}
+        titleSize={name.length > 13 ? titleSizeLg : titleSizeSm}
       />
       <video
         ref={videoRef}

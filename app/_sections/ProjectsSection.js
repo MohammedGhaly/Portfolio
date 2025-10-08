@@ -81,6 +81,19 @@ function ProjectsSection() {
           githubLink={"https://github.com/MohammedGhaly/SPYLT"}
           liveLink={"https://spyltpage.netlify.app/"}
         />
+        <ProjectItem
+          src={"/videos/chessFenDemo.mp4"}
+          cn="h-[109%]"
+          name={"ChessFen"}
+          techStack={["React.js", "python", "openCV", "Tensorflow"]}
+          description={
+            "ML model that generates the FEN code of a chess position from an image of a chess board"
+          }
+          lightText={"#EAD194"}
+          darkText={"#e68a13"}
+          githubLink={"https://github.com/MohammedGhaly/ChessFEN"}
+          liveLink={"https://thechessfen.netlify.app/"}
+        />
       </ProjectsStack>
     </section>
   );

@@ -4,16 +4,19 @@ import { useEffect, useState } from "react";
 
 const techImages = {
   "React.js": "/reactBlue.svg",
-  GSAP: "/gsapGreen.svg",
-  Typescript: "/tsblue.svg",
   "Next.js": "/nextjsBlack.svg",
   "Tailwind CSS": "/tailwindcss.svg",
   "Framer-motion": "/framerMotion.svg",
   "Styled-Components": "/StyledComponents.svg",
   "React Query": "/reactQuery.svg",
-  Supabase: "/supabase.svg",
   "Next-Auth": "/next-auth.svg",
   "Vue.js": "/vue.svg",
+  Supabase: "/supabase.svg",
+  GSAP: "/gsapGreen.svg",
+  Typescript: "/tsblue.svg",
+  openCV: "/opencv.svg",
+  Tensorflow: "/tensorflow.svg",
+  python: "/python.svg",
 };
 
 function ProjectItemDetails({
@@ -27,6 +30,7 @@ function ProjectItemDetails({
   darkText,
   githubLink,
   liveLink,
+  titleSize,
 }) {
   const [textColor, setTextColor] = useState(darkText);
   useEffect(() => {
@@ -79,19 +83,19 @@ function ProjectItemDetails({
 
   return (
     <div
-      className={`absolute inset-0 z-10 flex flex-col justify-between rounded-2xl p-4 backdrop-blur-sm transition-opacity duration-300 md:p-10 lg:p-[2.2vw] ${
+      className={`absolute inset-0 z-10 flex flex-col justify-between rounded-2xl p-4 backdrop-blur-sm transition-opacity duration-300 md:gap-2 lg:p-[1.5vw] ${
         isHovered ? "opacity-100" : "opacity-0"
       }`}
     >
       <h4
         style={{ color: textColor }}
-        className={`text-2xl font-semibold transition-all duration-200 md:text-6xl lg:text-[4.8vw]`}
+        className={`font-semibold transition-all duration-200 ${titleSize}`}
       >
         {name}
       </h4>
       <p
         style={{ color: textColor }}
-        className={`pr-14 text-base leading-5 normal-case transition-all duration-200 md:pr-22 md:text-3xl md:leading-9 lg:pr-[12vw] lg:text-[2.5vw] lg:leading-[2.8vw]`}
+        className={`pr-14 text-base leading-5 normal-case transition-all duration-200 md:pr-4 md:text-[1.3rem] md:leading-6 lg:pr-[1vw] lg:text-[2vw] lg:leading-[2.4vw]`}
       >
         {description}
       </p>
@@ -104,7 +108,7 @@ function ProjectItemDetails({
               alt={tech}
               width={64}
               height={64}
-              className="h-[2.4rem] w-[2.4rem] md:h-22 md:w-22 lg:h-[4.5vw] lg:w-[4.5vw]"
+              className="h-[2.4rem] w-[2.4rem] md:size-10 lg:size-[4vw]"
             />
           ))}
         </div>
@@ -118,12 +122,9 @@ function ProjectItemDetails({
                 color: textColor,
                 backgroundColor: `${textColor}20`,
               }}
-              className={`aspect-square h-fit rounded-full border-[1px] p-2 md:p-3 lg:p-[1vw]`}
+              className={`aspect-square rounded-full border-[1px] p-2 md:p-2.5 lg:p-[1vw]`}
             >
-              <Github
-                color={textColor}
-                className="md:h-[10] md:w-[10] lg:h-[3.2vw] lg:w-[3.2vw]"
-              />
+              <Github color={textColor} className="md:size-6 lg:size-[2.2vw]" />
             </button>
           )}
           {liveLink && (
@@ -135,11 +136,11 @@ function ProjectItemDetails({
                 color: textColor,
                 backgroundColor: `${textColor}20`,
               }}
-              className={`aspect-square h-fit rounded-full border-[1px] p-2 md:p-3 lg:p-[1vw]`}
+              className={`aspect-square h-fit rounded-full border-[1px] p-2 md:p-2.5 lg:p-[1vw]`}
             >
               <Binoculars
                 color={textColor}
-                className="md:h-10 md:w-10 lg:h-[3.2vw] lg:w-[3.2vw]"
+                className="md:size-6 lg:size-[2.2vw]"
               />
             </button>
           )}
